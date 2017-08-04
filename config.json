@@ -1,0 +1,14 @@
+{
+  "name": "deCONZ",
+  "version": "1",
+  "slug": "deCONZ",
+  "description": "the program for the Zigbee rpi shield created by www.dresden-elektronik.de",
+  "startup": "after",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "url": "https://test",
+  "ports": {
+    "8080/tcp": 80
+  }
+}
