@@ -1,6 +1,6 @@
 {
   "name": "deCONZ",
-  "version": "1.2",
+  "version": "1.5",
   "slug": "deconz",
   "description": "the program for the Zigbee rpi shield created by www.dresden-elektronik.de",
   "startup": "services",
@@ -13,6 +13,6 @@
     "8080/tcp": 8080,
     "80/tcp": 80
   },
-  "devices": ["/dev/ttyAMA0:/dev/ttyAMA0:rwm", "/dev/serial:/dev/serial:rwm", "/dev/serial1:/dev/serial1:rwm"],
+  "devices": ["/dev/ttyAMA0:/dev/serial0:rwm"],
   "privileged": ["SYS_ADMIN"]
 }
