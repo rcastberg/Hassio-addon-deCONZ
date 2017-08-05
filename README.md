@@ -1,11 +1,6 @@
 deCONZ
 ---------
-This add-on allows deCONZ (from dresend-elektronik.de) to be managed directly from homeassistant (from the web part, not the rpi gui)
-Installation doesn't work from within homeassistant, yet...
-At the moment it needs to be executed manually from the rpi with:
-```
-docker run --net host deconz &
-```
+This add-on allows deCONZ (from dresend-elektronik.de) to be managed directly from homeassistant (through the web service, not the rpi gui)
 add this to your config to add it to homeassistant:
  ```yaml
 panel_iframe:

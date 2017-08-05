@@ -1,14 +1,18 @@
 {
   "name": "deCONZ",
-  "version": "1",
-  "slug": "deCONZ",
+  "version": "1.2",
+  "slug": "deconz",
   "description": "the program for the Zigbee rpi shield created by www.dresden-elektronik.de",
-  "startup": "after",
+  "startup": "services",
   "boot": "auto",
+  "host_network": "yes",
   "options": {},
   "schema": {},
-  "url": "https://test",
+  "url": "https://github.com/fuglphoenix",
   "ports": {
-    "8080/tcp": 80
-  }
+    "8080/tcp": 8080,
+    "80/tcp": 80
+  },
+  "devices": ["/dev/ttyAMA0:/dev/ttyAMA0:rwm", "/dev/serial:/dev/serial:rwm", "/dev/serial1:/dev/serial1:rwm"],
+  "privileged": ["SYS_ADMIN"]
 }

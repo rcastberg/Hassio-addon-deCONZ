@@ -1,6 +1,11 @@
-FROM resin/rpi-raspbian
+#armhf:FROM resin/rpi-raspbian:jessie
 
 ENV LANG C.UTF-8
+ENV VERSION %%VERSION%%
+LABEL \
+    io.hass.version="1" \
+    io.hass.type="addon" \
+    io.hass.arch="armhf"
 
 # install packets
 RUN apt-get update && apt-get upgrade && \
