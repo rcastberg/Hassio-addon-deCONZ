@@ -33,6 +33,15 @@ RUN apt-get update && apt-get upgrade && \
         net-tools \
         iproute2 \
         iputils-ping \
+        libqt5core5a \
+        libqt5network5 \
+        libqt5widgets5 \
+        libqt5gui5 \
+        libqt5serialport5 \
+        libqt5websockets5 \
+        libqt5sql5 \
+        wiringpi \
+        sqlite3 \
         && rm -rf /var/lib/apt/lists/*
 
 RUN wget http://www.dresden-elektronik.de/rpi/deconz/deconz-latest.deb
