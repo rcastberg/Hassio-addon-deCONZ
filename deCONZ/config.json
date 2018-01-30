@@ -1,0 +1,31 @@
+{
+  "name": "deCONZ",
+  "version": "2.04.99",
+  "slug": "deconz",
+  "description": "the program for the Zigbee rpi shield created by www.dresden-elektronik.de",
+  "webui": "[http://[HOST]:[PORT:80]",
+  "startup": "after",
+  "boot": "auto",
+  "host_network": "no",
+  "arch": ["armhf"],
+  "auto_uart": true,
+  "options": {
+    "serial_port" : "",
+    "port" : "",
+    "device":""
+  },
+  "schema": {
+    "serial_port" : "str",
+    "port" : "port",
+    "device": "match(^/dev/.*$)"
+  },
+  "url": "https://github.com/rcastberg/hassio",
+  "ports": {
+    "80/tcp": 80
+  },
+  "map" : {
+    "config:rw"
+  },
+  "image": "rcastberg/deCONZ",
+  "devices": ["/dev/ttyAMA0:/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_DO00KEDR-if00-port0:rwm"]
+}

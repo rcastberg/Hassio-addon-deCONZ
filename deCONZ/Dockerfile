@@ -40,7 +40,7 @@ RUN sh -c 'echo "dtoverlay=pi3-miniuart-bt-overlay" >> /boot/config.txt'
 
 COPY run.sh /
 RUN chmod a+x /run.sh
-
+RUN mkdir -p /root/.local/share/dresden-elektronik
 
 CMD [ "/run.sh" ]
 
