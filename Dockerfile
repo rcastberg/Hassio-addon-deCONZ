@@ -30,8 +30,8 @@ RUN apt-get install -y \
         libqt5websockets5 \
         libqt5sql5 \
         wiringpi \
-        sqlite3 \
-        && rm -rf /var/lib/apt/lists/*
+        sqlite3 
+RUN rm -rf /var/lib/apt/lists/*
 
 COPY config.txt /boot/
 COPY cmdline.txt /boot/
@@ -42,6 +42,6 @@ COPY run.sh /
 RUN chmod a+x /run.sh
 
 
-#CMD [ "/usr/bin/deCONZ-autostart.sh", "/run.sh" ]
+CMD [ "/run.sh" ]
 
 # run with docker run --net host deconz &
