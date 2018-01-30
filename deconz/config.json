@@ -8,7 +8,7 @@
   "boot": "auto",
   "host_network": "no",
   "arch": ["armhf"],
-  "auto_uart": true,
+  "auto_uart": false,
   "options": {
   },
   "schema": {
@@ -17,5 +17,6 @@
   "ports": {
     "80/tcp": 80
   },
+ "devices": ["/dev/ttyAMA0:/dev/ttyUSB0:rwm"],
   "image": "rcastberg/deconz"
 }
