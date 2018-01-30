@@ -10,12 +10,10 @@
   "arch": ["armhf"],
   "auto_uart": true,
   "options": {
-    "port" : "",
-    "device":""
+    "port" : ""
   },
   "schema": {
-    "port" : "port",
-    "device": "match(^/dev/.*$)"
+    "port" : "port"
   },
   "url": "https://github.com/rcastberg/hassio",
   "ports": {
