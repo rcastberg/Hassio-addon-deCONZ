@@ -3,7 +3,7 @@
   "version": "2.04.99",
   "slug": "deconz",
   "description": "the program for the Zigbee rpi shield created by www.dresden-elektronik.de",
-  "webui": "[http://[HOST]:[PORT:80]",
+  "webui": "http://[HOST]:[PORT:80]",
   "startup": "after",
   "boot": "auto",
   "host_network": "no",
