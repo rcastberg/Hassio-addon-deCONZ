@@ -1,6 +1,6 @@
 {
   "name": "deconz",
-  "version": "2.04.99",
+  "version": "latest",
   "slug": "deconz",
   "description": "the program for the Zigbee rpi shield created by www.dresden-elektronik.de",
   "webui": "http://[HOST]:[PORT:80]",
