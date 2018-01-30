@@ -10,12 +10,10 @@
   "arch": ["armhf"],
   "auto_uart": true,
   "options": {
-    "serial_port" : "",
     "port" : "",
     "device":""
   },
   "schema": {
-    "serial_port" : "str",
     "port" : "port",
     "device": "match(^/dev/.*$)"
   },
@@ -23,6 +21,5 @@
   "ports": {
     "80/tcp": 80
   },
-  "image": "rcastberg/deconz",
-  "devices": ["/dev/ttyAMA0:/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_DO00KEDR-if00-port0:rwm"]
+  "image": "rcastberg/deconz"
 }
