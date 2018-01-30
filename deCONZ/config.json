@@ -23,9 +23,6 @@
   "ports": {
     "80/tcp": 80
   },
-  "map" : {
-    "config:rw"
-  },
   "image": "rcastberg/deCONZ",
   "devices": ["/dev/ttyAMA0:/dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_DO00KEDR-if00-port0:rwm"]
 }
