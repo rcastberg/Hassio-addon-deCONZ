@@ -4,7 +4,7 @@ This add-on allows deCONZ (from dresend-elektronik.de) to be managed directly fr
 Installation doesn't work from within homeassistant, yet...
 At the moment it needs to be executed manually from the rpi with:
 ```
-docker run --net host deconz &
+docker run --net host  -p 80:80 rcastberg/deconz:latest 
 ```
 add this to your config to add it to homeassistant:
  ```yaml
@@ -14,5 +14,7 @@ panel_iframe:
     url: 'http://hassio.local:80/'
     icon: mdi:chart-donut-variant
  ```
+Default user/pass: delight/delight
+
 To use utilize the zigbee devices in homeassistant, use the REST api: http://dresden-elektronik.github.io/deconz-rest-doc/ 
 ![homeassistant deCONZ gui](./image.png)
