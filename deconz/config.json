@@ -10,10 +10,8 @@
   "arch": ["armhf"],
   "auto_uart": true,
   "options": {
-    "port" : ""
   },
   "schema": {
-    "port" : "port"
   },
   "url": "https://github.com/rcastberg/hassio",
   "ports": {
