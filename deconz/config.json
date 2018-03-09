@@ -17,6 +17,7 @@
   "ports": {
     "80/tcp": 80
   },
- "devices": ["/dev/ttyUSB0:/dev/ttyUSB0:rwm"],
-  "image": "rcastberg/deconz"
+  "devices": ["/dev/ttyUSB0:/dev/ttyUSB0:rwm"],
+  "image": "rcastberg/deconz",
+  "map": ["config:rw"]
 }
