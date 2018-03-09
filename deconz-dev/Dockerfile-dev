@@ -38,7 +38,7 @@ COPY cmdline.txt /boot/
 RUN sh -c 'echo "enable_uart=1" >> /boot/config.txt'
 RUN sh -c 'echo "dtoverlay=pi3-miniuart-bt-overlay" >> /boot/config.txt'
 
-COPY run.sh /
+COPY run-dev.sh /
 RUN chmod a+x /run.sh
 RUN mkdir -p /root/.local/share/dresden-elektronik
 
