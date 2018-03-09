@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #url=$(wget "https://www.dresden-elektronik.de/funktechnik/products/software/pc/deconz/" -O - |grep "(Raspbian Linux)"|sed -e "s/.*href=\"//" -e "s/\"\ .deCONZ.*//"|head -n 1|sed -e "s/\?L=.*\&amp;eID/\?eID/" -e "s/amp\;//")
-url='https://www.dresden-elektronik.de/rpi/deconz/deconz-latest.deb'
+url='https://www.dresden-elektronik.de/rpi/deconz-dev/deconz-dev-2.05.11.deb'
 wget $url -O deconz.deb
 dpkg -i deconz.deb
 

@@ -1,0 +1,5 @@
+#!/bin/bash
+#Command for manually running docker image
+
+docker run -d --rm -p 9980:80 --name deCONZ --volume /mnt/data/resin-data/deCONZ/:/root/.local/share/dresden-elektronik/ --restart=always --device /dev/serial/by-id/usb-FTDI_FT230X_Basic_UART_DO00KEDR-if00-port0:/dev/ttyAMA0  rcastberg/deconz:latest
+

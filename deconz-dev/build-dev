@@ -1,0 +1,3 @@
+#!/bin/bash
+docker build --file="Dockerfile-dev" -t "rcastberg/deconz-dev:latest"  .
+docker push "rcastberg/deconz-dev:latest"

@@ -1,0 +1,23 @@
+{
+  "name": "deconz-dev",
+  "version": "latest",
+  "slug": "deconz-dev",
+  "description": "the program for the Zigbee rpi shield created by www.dresden-elektronik.de, dev version",
+  "webui": "http://[HOST]:[PORT:80]",
+  "startup": "after",
+  "boot": "auto",
+  "host_network": "no",
+  "arch": ["armhf"],
+  "auto_uart": false,
+  "options": {
+  },
+  "schema": {
+  },
+  "url": "https://github.com/rcastberg/hassio",
+  "ports": {
+    "80/tcp": 80
+  },
+  "devices": ["/dev/ttyUSB0:/dev/ttyUSB0:rwm"],
+  "image": "rcastberg/deconz-dev",
+  "map": ["config:rw"]
+}
